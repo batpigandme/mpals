@@ -57,7 +57,7 @@ scale_color_owl <- scale_colour_owl
 scale_fill_owl <- function(...) { ggplot2::discrete_scale("fill", "owl", owl_pal(), ...) }
 
 # colour palette based on night-owl theme
-littleowl_palette <- c("#5f7e97", "#addb67", "#82aaff", "#7fdbca", "#f78c6c", "#ffeb95", "#c792ea")
+littleowl_palette <- c("#5f7e97", "#addb67", "#f78c6c", "#82aaff", "#7fdbca", "#ffeb95", "#c792ea")
 
 #' A seven-colour palette
 #'
