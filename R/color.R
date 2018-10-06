@@ -55,3 +55,32 @@ scale_color_owl <- scale_colour_owl
 #' @export
 #' @rdname scale_owl
 scale_fill_owl <- function(...) { ggplot2::discrete_scale("fill", "owl", owl_pal(), ...) }
+
+# colour palette based on night-owl theme
+littleowl_palette <- c("#5f7e97", "#addb67", "#82aaff", "#7fdbca", "#f78c6c", "#ffeb95", "#c792ea")
+
+#' A seven-colour palette
+#'
+#' @export
+#' @examples
+#' library(scales)
+#' scales::show_col(owl_pal()(7))
+littleowl_pal <- function() { scales::manual_pal(littleowl_palette) }
+
+#' Discrete color & fill scales based on the owl palette
+#'
+#' See [littleowl_pal]().
+#'
+#' @md
+#' @inheritDotParams ggplot2::discrete_scale -expand -position
+#' @rdname scale_littleowl
+#' @export
+scale_colour_littleowl <- function(...) { ggplot2::discrete_scale("colour", "littleowl", littleowl_pal(), ...) }
+
+#' @export
+#' @rdname scale_littleowl
+scale_color_littleowl <- scale_colour_littleowl
+
+#' @export
+#' @rdname scale_littleowl
+scale_fill_littleowl <- function(...) { ggplot2::discrete_scale("fill", "littleowl", littleowl_pal(), ...) }
