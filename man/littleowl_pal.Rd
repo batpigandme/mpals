@@ -11,5 +11,5 @@ A seven-colour palette
 }
 \examples{
 library(scales)
-scales::show_col(owl_pal()(7))
+scales::show_col(littleowl_pal()(7))
 }
